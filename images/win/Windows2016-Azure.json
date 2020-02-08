@@ -6,10 +6,7 @@
         "tenant_id": "{{env `ARM_TENANT_ID`}}",
         "object_id": "{{env `ARM_OBJECT_ID`}}",
         "resource_group": "{{env `ARM_RESOURCE_GROUP`}}",
-        "storage_account": "{{env `ARM_STORAGE_ACCOUNT`}}",
-        "temp_resource_group_name": "{{env `TEMP_RESOURCE_GROUP_NAME`}}",
-        "location": "{{env `ARM_RESOURCE_LOCATION`}}",
-        "ssh_password": "{{env `SSH_PASSWORD`}}",
+        "location": "australiaeast",
         "virtual_network_name": "{{env `VNET_NAME`}}",
         "virtual_network_resource_group_name": "{{env `VNET_RESOURCE_GROUP`}}",
         "virtual_network_subnet_name": "{{env `VNET_SUBNET`}}",
@@ -39,10 +36,6 @@
 
             "location": "{{user `location`}}",
             "vm_size": "{{user `vm_size`}}",
-            "resource_group_name": "{{user `resource_group`}}",
-            "virtual_network_name": "{{user `virtual_network_name`}}",
-            "virtual_network_resource_group_name": "{{user `virtual_network_resource_group_name`}}",
-            "virtual_network_subnet_name": "{{user `virtual_network_subnet_name`}}",
 
             "managed_image_name": "win2016agent-{{isotime \"200601020304\"}}",
             "managed_image_resource_group_name": "{{user `resource_group`}}",
