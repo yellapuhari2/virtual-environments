@@ -23,7 +23,7 @@
         "helper_script_folder": "C:\\Program Files\\WindowsPowerShell\\Modules\\",
         "commit_url": "LATEST",
         "install_user": "installer",
-        "install_password": {{env `install_password`}},
+        "install_password": "{{env `install_password`}}",
         "capture_name_prefix": "packer",
         "image_version": "dev",
         "github_feed_token": "{{env `GITHUB_FEED_TOKEN`}}"
